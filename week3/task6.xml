@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seller xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="task6_3.xml">
+    <client xmlns="http://example.org/client" xmlns:client="http://example.org/client">
+        <name/>
+        <years/>
+        <favourite_shop>
+            <name/>
+            <description/>
+        </favourite_shop>
+    </client>
+</seller>

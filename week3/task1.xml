@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="task1_xsd.xml">
+     <description/>
+     <recipe>
+          <title>Title</title>
+          <preparation>
+               <step>woow</step>
+          </preparation>
+          <nutrition protein="20" carbohydrates="40" fat="10" calories="200" alcohol="100"></nutrition>
+     </recipe>
+</collection>

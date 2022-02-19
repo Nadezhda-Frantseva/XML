@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:client="http://example.org/client">
+ <xsd:import namespace="http://example.org/client" schemaLocation="task6_2.xml"/>
+ <xsd:element name="seller" type="sellerType"/>
+ <xsd:complexType name="sellerType">
+  <xsd:sequence>
+   <xsd:element ref="client:client" maxOccurs="unbounded"/>
+  </xsd:sequence>
+ </xsd:complexType>
+</xsd:schema>

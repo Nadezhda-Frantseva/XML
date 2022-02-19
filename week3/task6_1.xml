@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://example.org/shop" xmlns="http://example.org/shop" xmlns:shop2=" http://example.org/shop2" elementFormDefault="qualified">
+ <xsd:import namespace="http://example.org/shop2" schemaLocation="task6_1.xml"/>
+ <xsd:element name="shop" type="shopType"/>
+ <xsd:complexType name="shopType">
+  <xsd:sequence>
+   <xsd:element name="name" type="xs:string"/>
+   <xsd:element name="description" type="xs:string"/>
+  </xsd:sequence>
+ </xsd:complexType>
+</xsd:schema>
