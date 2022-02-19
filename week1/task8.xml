@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cinema_City_Paradise>
+    <general_information>
+        <address>София, бул. Черни връх 100, в сградата на Paradise Center</address>
+        <phone>02 903 74 74</phone>
+        <email>info.paradise@cinemacity.bg</email>
+        <info>
+            Мултиплекс Cinema City Парадайз разполага с:
+                • 14 модерни киносалона с 2166 места
+                • първата 4DX зала в България
+                • съоръжения за посетители в инвалидни колички
+                • Посетителите на Парадайз център ползват 2 часа безплатен паркинг. За допълнителни 90 минути е необходимо да валидирате талона си за паркиране  на касите при закупуване на билетите за кино.
+        </info>
+    </general_information>
+    <prices>
+        <Monday>
+            <Regular>10,9</Regular>
+            <Childish>8,4</Childish>
+            <Older60>8,4</Older60>
+            <students>8,4</students>
+        </Monday>
+        <Tuesday>
+            <Regular>10,9</Regular>
+            <Childish>8,4</Childish>
+            <Older60>8,4</Older60>
+            <students>8,4</students>
+        </Tuesday>
+        <Wednesday>
+            <Regular>10,9</Regular>
+            <Childish>8,4</Childish>
+            <Older60>8,4</Older60>
+            <students>8,4</students>
+        </Wednesday>
+        <Thursday>
+            <Regular>10,9</Regular>
+            <Childish>8,4</Childish>
+            <Older60>8,4</Older60>
+            <students>8,4</students>
+        </Thursday>
+        <Friday>
+            <Regular>10,9</Regular>
+            <Childish>8,4</Childish>
+            <Older60>8,4</Older60>
+            <students>8,4</students>
+        </Friday>
+        <Saturday>
+            <Regular></Regular>
+            <Childish></Childish>
+            <Older60></Older60>
+            <students></students>
+        </Saturday>
+        <Sunday>
+            <Regular></Regular>
+            <Childish></Childish>
+            <Older60></Older60>
+            <students></students>
+        </Sunday>
+    </prices>
+    <films>
+        <Wolf100>
+            <date d="19 октомври (вторник)">
+                <hour h="1">13:10</hour>
+                <hour h="2">16:20</hour>
+            </date>
+            <date d="20 октомври (сряда)">
+                <hour h="1">13:10</hour>
+                <hour h="2">16:20</hour>
+            </date>
+            <date d="21 октомври (четвъртък)">
+                <hour h="1">13:10</hour>
+                <hour h="2">15:40</hour>
+            </date>
+        </Wolf100>
+        <Baby_Boss_Family_Affairs>
+            <date d="19 октомври (вторник)">
+                <hour h="1">15:40</hour>
+            </date>
+            <date d="20 октомври (сряда)">
+                <hour h="1">15:40</hour>
+            </date>
+            <date d="21 октомври (четвъртък)">
+                <hour h="1">15:40</hour>
+            </date>
+        </Baby_Boss_Family_Affairs>
+    </films>
+</Cinema_City_Paradise>

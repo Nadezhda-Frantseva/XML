@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root xmlns:paper="http://www.w3.org/1999/book"
+      xmlns:note="http://www.w3.org/1999/record">
+    <paper:book>
+        <paper:title>A true story</paper:title>
+        <paper:description>A real cool publication</paper:description>
+    </paper:book>
+    <note:record>
+        <note:name>Miller</note:name>
+        <note:title>Dr. </note:title>
+        <note:publications> ... </note:publications>
+    </note:record>
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+    <book>
+        <title>A true story</title>
+        <description>A real cool publication</description>
+    </book>
+    <record>
+        <name>Miller</name>
+        <title>Dr. </title>
+        <publications> ... </publications>
+    </record>

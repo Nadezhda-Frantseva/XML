@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<table>
+    <row r="0">
+        <condition>Condition</condition>
+        <operator>Operator</operator>
+        <formula_example>Formula example</formula_example>
+        <description>Description</description> 
+    </row>
+    <row r="1">
+        <condition>Equal to</condition>
+        <operator><![CDATA[=]]></operator>
+        <formula_example><![CDATA[=A1=B1]]></formula_example>
+        <description>The formula returns TRUE if a value in cell A1 is equal to the values in cell B1; FALSE otherwise.</description> 
+    </row>
+    <row r="2">
+        <condition>Not equal to</condition>
+        <operator><![CDATA[<>]]></operator>
+        <formula_example><![CDATA[=A1<>B1]]></formula_example>
+        <description>The formula returns TRUE if a value in cell A1 is not equal to the value in cell B1; FALSE otherwise.</description>
+    </row>
+    <row r="3">
+        <condition>Greater than</condition>
+        <operator><![CDATA[>]]></operator>
+        <formula_example><![CDATA[=A1>B1]]></formula_example>
+        <description>The formula returns TRUE if a value in cell A1 is greater than a value in cell B1; otherwise it returns FALSE.</description>
+    </row>
+    <row r="4">
+        <condition>Less than</condition>
+        <operator><![CDATA[<]]></operator>
+        <formula_example><![CDATA[=A1<B1]]></formula_example>
+        <description>The formula returns TRUE if a value in cell A1 is less than in cell B1; FALSE otherwise.</description>
+    </row>
+    <row r="5">
+        <condition>Greater than or equal to</condition>
+        <operator><![CDATA[>=]]></operator>
+        <formula_example><![CDATA[=A1>=B1]]></formula_example>
+        <description>The formula returns TRUE if a value in cell A1 is greater than or equal to the values in cell B1; FALSE
+otherwise.</description>
+    </row>
+    <row r="6">
+        <condition>Less than or equal to</condition>
+        <operator><![CDATA[<=]]></operator>
+        <formula_example><![CDATA[=A1<=B1]]></formula_example>
+        <description>The formula returns TRUE if a value in cell A1 is less than or equal to the values in cell B1; FALSE
+otherwise.</description>
+    </row>
+</table>
