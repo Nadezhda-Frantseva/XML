@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE footballMatches[
+<!-- коренът съдържа много мачове: -->
+<!ELEMENT footballMatches (match)*>
+<!-- всеки мач има по отбори, краен резултат, играчи с гол, време на гол, играчи с картон : -->
+<!ELEMENT match (teams,final,goal+,penalizedPlayers*)>
+<!-- 1. Футболните отбори участващи в един мач -->
+<!-- всеки мач се играе от 2 отбора: -->
+<!ELEMENT teams (home-team,ex-team)>
+<!ELEMENT home-team (#PCDATA)>
+<!ELEMENT ex-team (#PCDATA)>
+<!-- 2. Крайния резултат за всеки мач -->
+<!ELEMENT final (#PCDATA)>
+<!-- 3. Играчите отбелязали гол в мача
+     4. Времето, в което е отбелязан всеки гол :-->
+<!ELEMENT goal (player,time)>
+<!ELEMENT player (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!-- 5. Играчите получили наказателни картони (жълти или червени => атрибути) -->
+<!ELEMENT penalizedPlayers (player*)>
+<!ATTLIST penalizedPlayers cards (yellow | red) #REQUIRED>
+]>
+<footballMatches>
+    <match>
+        <teams>
+            <home-team>home1</home-team>
+            <ex-team>ex1</ex-team>
+        </teams>
+        <final>2-1</final>
+        <goal>
+            <player>Ivancho</player>
+            <time>12:50</time>
+        </goal>
+        <penalizedPlayers cards="yellow">
+            <player>Dragancho</player>
+        </penalizedPlayers>
+        <penalizedPlayers cards="red">
+            <player>Gosho</player>
+        </penalizedPlayers>
+    </match>
+     <match>
+        <teams>
+            <home-team>Levski</home-team>
+            <ex-team>CSK</ex-team>
+        </teams>
+        <final>1-1</final>
+        <goal>
+            <player>Tincho</player>
+            <time>01:01</time>
+        </goal>
+        <penalizedPlayers cards="yellow">
+            <player>Georgi</player>
+        </penalizedPlayers>
+    </match>
+</footballMatches>

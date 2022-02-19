@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Channel[ 
+<!-- 2. Под-елементите на channel имат следния ред на подреждане: item, title, link, image, language и description 
+     3. Под-елементите на channel - item, title, link и description са задължителни => слагаме им +, за да окажем, че се срещат един или повече пъти,
+        а останалите елементи image и language - не 
+     4. Елементите item и image могат да се срещат много пъти => понеже item се среща задължително (от 3.), му слагаме +, докато image не е 
+        задължителен => слагаме му * за 0 или повече пъти :  -->
+<!ELEMENT Channel (item+, title+, link+, image*, language?, description+)>
+<!-- 1. Елементът channel има атрибут с име version: -->
+<!ATTLIST Channel version CDATA #REQUIRED>
+<!-- 5. Под-елементите на item (т.е. title, link, description) и image (т.е. title, link, url) нямат определена последователност 
+     => изброяваме всичко възможно 
+     6. Под-елементът description на item е незадължителен => слагаме му ?, за да укажем, че се среща 0 или 1 път : -->
+<!ELEMENT item ((title, link, description?) | (title, description?, link) | (link, title, description?) | (link, description?, title) | (description?, title, link) | (description?, link, title))>
+<!ELEMENT image (title | link | url)+>
+<!-- Друг начин: <!ELEMENT image ((title | link | url) | (title | url | link) | (link | title | url) | (link | url | title) | (url | title | link) | (url | link | title))> -->
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+]>
+<Channel version="1234">
+    <item>
+        <title>Some title</title>
+        <link>"some link"</link>
+    </item>
+    <title>Some other title</title>
+    <link>"some other link"</link>
+    <image>
+        <title>Third title</title>
+        <link>"Third link"</link>
+        <url>"some url"</url>
+    </image>
+    <language>English</language>
+    <description>woooooow</description>
+</Channel>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Channel SYSTEM "task7_dtd.xml">
+<Channel version="1234">
+    <item>
+        <title>Some title</title>
+        <link>&link;</link>
+        <description>Some description</description>
+    </item>
+    <title>Other title</title>
+    <link></link>
+    <image>
+        <title>other title 2</title>
+        <link>linkche</link>
+        <url>urlche</url>
+    </image>
+    <language>German</language>
+     <description>qbadabaduuuu</description>
+</Channel>

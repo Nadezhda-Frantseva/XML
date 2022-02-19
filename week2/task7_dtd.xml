@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY % Title "title"> <!-- 3. Параметризирано entity със стойност "title" и да се използва навсякъде където тази дума се среща в DTD файла-->
+<!-- <!ELEMENT Channel (item+, %Title+, link+, image*, language?, description+)> -->
+<!ELEMENT Channel (item+, %Title;+, link+, image*, language?, description+)> 
+<!ATTLIST Channel version CDATA #REQUIRED>
+<!ELEMENT item ((%Title;, link, description?) | (%Title;, description?, link) | (link, %Title;, description?) | (link, description?, %Title;) | (description?, %Title;, link) | (description?, link, %Title;))>
+<!-- Декларация на entity, използващо долните 2 нотации : --> 
+<!ENTITY GIF_SYSTEM SYSTEM "www.uni-sofia.bg/logo.gif" NDATA GIF>
+<!ENTITY gif_public PUBLIC "www.uni-sofia.bg/logo.gif" "www.ox.ac.uk/display_images/logo.gif">
+<!-- 1. вътрешна (System) на DTD нотация за MIME типа image/gif : -->
+<!NOTATION GIF SYSTEM "image/gif">
+<!-- 1. една външна декларация (Public) на DTD нотация за MIME типа image/gif : -->
+<!NOTATION gif PUBLIC "image/gif">
+<!ENTITY link "www.uni-sofia.bg"> <!-- 2. Общо entity, задаващо стойността на елемента link на image -->
+<!ELEMENT image (title, link, url)>
+<!ELEMENT %Title; (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!-- Вложено еntity в entity -->
+<!ENTITY % titleInTitle "EntityInEntity %Title;">
+

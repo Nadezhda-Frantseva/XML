@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Channel SYSTEM "task9_dtd.xml">
+<Channel version="1234">
+    <item>
+        <title>Some title</title>
+        <link>"some link"</link>
+    </item>
+    <title>Some other title</title>
+    <link>"some other link"</link>
+    <description>woooooow</description>
+</Channel>
