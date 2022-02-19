@@ -1,0 +1,110 @@
+rss {
+    display:table;
+    font-family: Tahoma, Arial;
+    font-size: 20px;
+    background-color: pink;
+ }
+ channel *{ /* Вид CSS елемент селектор - универсален - прилага се към всички елементи*/
+    display:block;
+    background-color: pink;
+    color: black;
+    font-size: 18px;
+ }
+ /* CSS дефиниция, която форматира по различен начин под-елементите на item - title, description и link
+  и по един и същи начин под-елементите на textinput - title, description, name и link: */
+ item {
+    padding-top:11px;
+    display:block;
+ }
+ item title { /* елемента title на item */
+    display:block;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    text-indent: 20px;
+ }
+ item description {  /* елемента description на item */
+    display:block;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    text-indent: 20px;
+    margin: 5px;
+    padding: 5px;
+ }
+ item link {  /* елемента link на item */
+    display:block;
+    background-color: green;
+    color: blue;
+    margin: 5px;
+    padding: 5px;
+    font-size: 13px;
+    text-indent: 20px;
+ }
+ textinput *{ /* Вид CSS елемент селектор - универсален - прилага се към всички елементи*/
+    display:block;
+    text-indent: 20px;
+    padding-bottom:7px;
+    content: "Textinput section: ";
+    display:block;
+    background-color: plum;
+    color: blue;
+    font-size: 15px;
+    text-indent: 20px;
+ }
+ /* 2. CSS дефиниция, която форматира по различен начин под-елементите на item - title, description и link,
+  взависимост от изхода на клиента (принтер или екран) и взависимост от размера на екрана на клиента: */
+ @media screen and (min-width: 480px) { /* Променя под-елементите на item, когато прозорецът на браузъра е широк 480px или повече: */
+    item title {
+       display:block;
+       background-color: purple;
+       color: black;
+       font-size: 12px;
+       text-indent: 20px;
+    }
+    item description {
+       display:block;
+       background-color: green;
+       color: black;
+       font-size: 15px;
+       text-indent: 20px;
+       margin: 5px;
+       padding: 5px;
+    }
+    item link{
+       display:block;
+       background-color: white;
+       color: blue;
+       margin: 5px;
+       padding: 5px;
+       font-size: 11px;
+       text-indent: 20px;
+    }
+ }
+ @media print { /* Променя под-елементите на item, когато изхода е принтер: */
+    item title {
+       display:block;
+       background-color: pink;
+       color: black;
+       font-size: 12px;
+       text-indent: 20px;
+    }
+    item description {
+       display:block;
+       background-color: purple;
+       color: black;
+       font-size: 15px;
+       text-indent: 20px;
+       margin: 5px;
+       padding: 5px;
+    }
+    item link {
+       display:block;
+       background-color: orange;
+       color: blue;
+       margin: 5px;
+       padding: 5px;
+       font-size: 11px;
+       text-indent: 20px;
+    }
+ }

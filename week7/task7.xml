@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<book xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="task7.xsd">
+   <chapters>
+       <chapter xlink:type="simple" xlink:href="task7_2.xml#xpointer(id('number1'))" xlink:show="new"> 
+           <!-- Проста (simple) връзка – притежава само една дъга, с локален начален ресурс и отдалечен краен ресурс-->
+           <!-- href – URI на ресурс-->
+           <!-- show – описва поведението на представяне на href ресурса при траверс на връзката-->
+           <!-- new - съдържанието на документа ще се покаже в нов прозорец-->
+           <!-- task7_2.xml#xpointer(id('number1')) - задаване на XPointer израз в проста XLink връзка към елемента с id = number1, който е в документа task7_2.xml -->
+           <content>
+               Some content
+           </content>
+       </chapter>
+       <chapter xlink:type="simple" xlink:href="task7_2.xml#xpointer(id('number2'))" xlink:show="new">
+         <!-- task7_2.xml#xpointer(id('number2')) - задаване на XPointer израз в проста XLink връзка към елемента с id = number2, който е в документа task7_2.xml -->
+           <content>
+               Other content
+           </content>
+       </chapter>
+   </chapters>
+</book>

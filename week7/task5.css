@@ -1,0 +1,40 @@
+#text {
+    width: 300px; /* широчина */
+    background-color: yellow; /* цвят на фон */
+    height: 200px; /* височина */
+    overflow: auto; /* Свойството CSS overflow контролира какво се случва със съдържание, което е твърде голямо, за да се побере в дадена област. */
+    margin-top: 20px; /* допустими граници или маржове - отгоре */
+    padding-left: 5px; /* подложката, заобикаляща съдържанието- - отляво */
+    padding-right: 5px; /* подложката, заобикаляща съдържанието- - отдясно */
+    border-top: 6px dashed #289030; /* граница - отгоре */
+    border-bottom: 3px solid #5f4dc5; /* граница - отдолу */
+    border-left: 6px double orange; /* граница - отляво */
+    display: inline-block; /* поредови кутии (без нов ред за отделен параграф) */
+ }
+ p {
+    display:inline; /* поблокови кутии (всеки параграф на нов ред) */
+ }
+ .BoldAndUnderline {
+    font-weight: bold; /* дебелина на шрифта */
+    text-decoration: underline; /* задава външния вид на декоративни линии върху текста */
+ }
+ .picture {
+    width: 310px;
+    height: 150px;
+    border: 6px solid #a0a7c1;
+    display: inline-block;
+    border-radius: 20px;
+ }
+ #blockSection
+ {
+    display:block;
+ }
+ body {
+    margin: auto;
+    width: 650px;
+    background-color: #e8e8e8;
+    border: 3px solid #1e64cc;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    border-top-right-radius: 20px;
+ }

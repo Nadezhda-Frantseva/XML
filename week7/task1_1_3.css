@@ -1,0 +1,43 @@
+/* 2. Импортирайте две от CSS дефинициите в третата: */
+@import url('task1_1_1.css');
+@import url('task1_1_2.css');
+ul li {
+    color:#660000;
+    background-color:red;
+    list-style-type:disc;
+ }
+ ul li li {
+    color:#660000;
+    background-color:red;
+    list-style-type:disc
+ }
+ ol li {
+    color:#660000;
+    background-color:red;
+    list-style-type:disc
+ }
+ ol li li {
+    color:#660000;
+    background-color:white;
+    list-style-type:disc
+ }
+ a:link {
+    color:blue;
+    background-color:white;
+    text-decoration:none
+ }
+ a:active {
+    color:blue;
+    background-color:red;
+    text-decoration:none
+ }
+ a:visited {
+    color:blue;
+    background-color:white;
+    text-decoration:none
+ }
+ a:hover {
+    color:purple;
+    background-color:yellow;
+    text-decoration:underline
+ }

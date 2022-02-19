@@ -1,0 +1,57 @@
+p:first-of-type { /* задава цвят на фона за първият елемент <p> на неговия родител */
+    background: green;
+    color:yellow;
+ }
+ 
+ .warning > *[lang^=en] { /* [lang^=en] избира всички елементи със lang атрибут, чиято стойност започва с „en“. Тези елементи са преки наследници на warning */
+    color: green;
+ }
+ 
+ *[lang^=en] { /* [lang^=en] избира всички елементи със lang атрибут, чиято стойност започва с „en“ */
+    color: black;
+ }
+ 
+ .warning { /* Клас за елемент */
+    color: red;
+ }
+ 
+ .warning > span:not([lang]) { /* всички SPAN-елементи, които нямат атрибут lang */
+    background: yellow;
+    color:blue;
+ }
+ 
+ #maincontent { /* ID селектор */
+    border: 1px solid blue;
+ }
+ 
+ p+p+div { /* селектор от тип "съседни брат/сестра" */
+    color: orange;
+    text-transform: uppercase;
+    text-indent: 20px
+ }
+ 
+ p ~ div { /* селектор от тип "брат/сестра, където и да са" */
+ color: red;
+ }
+ 
+ code + div { /* селектор от тип "съседни брат/сестра" */
+    color: green;
+ }
+ 
+ div + p { /* селектор от тип "съседни брат/сестра" */
+    color: blue;
+ }
+ 
+ div + p:first-letter {  /* Псевдо-елементът first-letter се използва за така наречените бити букви (drop caps) и други ефекти. */
+    color: orange;
+    font-size: 33px;
+ }
+ 
+ div + p::first-line { /* Псевдо-елементът first-line се използва за различно представяне на първата линия от дадено съдържание */
+    background-color: green;
+    color: yellow;
+ }
+ 
+ body {
+    color: brown;
+ }

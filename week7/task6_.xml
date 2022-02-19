@@ -1,0 +1,6 @@
+<book xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="task6.xsd">
+   <chapters>
+      <xi:include href="task6_1.xml"/> <!--href - URI референция към документа за включване task6_1.xml-->
+      <xi:include href="task6_2.xml"/> <!--href - URI референция към документа за включване task6_2.xml-->
+   </chapters>
+</book>
